@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@layout/menu_group_background" >
+ 	
+    <LinearLayout android:id="@+id/menu_group_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip">
+        
+		<TextView
+	        android:id="@+id/menu_group_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+	        android:textSize="20sp" 
+	        />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/menu_group_cost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_group_layout"
+       	android:layout_toRightOf="@+id/menu_group_layout"
+       	android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="20sp"
+        android:textColor="#e63607" 
+        />   
+        
+    <TextView
+        android:id="@+id/menu_group_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_group_layout"
+       	android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="12sp" 
+        />   
+    
+</RelativeLayout>

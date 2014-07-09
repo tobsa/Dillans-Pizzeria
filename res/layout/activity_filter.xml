@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+	
+    <TextView
+		android:id="@+id/filter_space"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		/>
+    
+    <Button 
+        android:id="@+id/filter_button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="Avbryt" 
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/filter_space"
+        android:background="@layout/button_background"
+        android:onClick="onButtonCancelClick"
+         />
+        
+    <Button 
+        android:id="@+id/filter_button_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="Filtrera" 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/filter_space"
+        android:background="@layout/button_background"
+        android:onClick="onButtonFilterClick"
+        />
+    
+    <ListView 
+        android:id="@+id/filter_ingredients"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_alignParentTop="true" 
+        android:layout_above="@id/filter_button_cancel" />
+    
+</RelativeLayout>

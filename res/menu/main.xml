@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tobsa.dillanspizzeria.MainActivity" >
+
+    <item 
+        android:id="@+id/main_action_type"
+        android:title="type"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="always" />
+    
+    <item 
+        android:id="@+id/main_action_filter"
+        android:title="filter"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="always" />
+
+</menu>
